@@ -1,0 +1,143 @@
+@font-face {
+  font-family: VazirMatn;
+  src: url('../fonts/vazirmatn-thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: VazirMatn;
+  src: url('../fonts/vazirmatn-extra-light.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: VazirMatn;
+  src: url('../fonts/vazirmatn-light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: VazirMatn;
+  src: url('../fonts/vazirmatn-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: VazirMatn;
+  src: url('../fonts/vazirmatn-medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: VazirMatn;
+  src: url('../fonts/vazirmatn-semi-bold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: VazirMatn;
+  src: url('../fonts/vazirmatn-bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: VazirMatn;
+  src: url('../fonts/vazirmatn-extra-bold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: VazirMatn;
+  src: url('../fonts/vazirmatn-black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: VazirMatnFa;
+  src: url('../fonts/fa/vazirmatn-thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: VazirMatnFa;
+  src: url('../fonts/fa/vazirmatn-extra-light.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: VazirMatnFa;
+  src: url('../fonts/fa/vazirmatn-light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: VazirMatnFa;
+  src: url('../fonts/fa/vazirmatn-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: VazirMatnFa;
+  src: url('../fonts/fa/vazirmatn-medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: VazirMatnFa;
+  src: url('../fonts/fa/vazirmatn-semi-bold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: VazirMatnFa;
+  src: url('../fonts/fa/vazirmatn-bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: VazirMatnFa;
+  src: url('../fonts/fa/vazirmatn-extra-bold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: VazirMatnFa;
+  src: url('../fonts/fa/vazirmatn-black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}

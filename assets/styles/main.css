@@ -1,0 +1,16 @@
+::-ms-clear {
+  display: none;
+}
+
+*,
+html {
+  font-family: 'VazirMatnFa' !important;
+}
+
+.fontface-vazirmatn {
+  font-family: 'VazirMatn' !important;
+}
+
+.fontface-vazir-fa {
+  font-family: 'VazirMatnFa' !important;
+}
