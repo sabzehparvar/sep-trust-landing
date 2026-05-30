@@ -1,10 +1,52 @@
 ::-ms-clear {
   display: none;
 }
+:root {
+  --primary-color: #3473df;
+  --primary-light: #eef3ff;
 
+  --text-primary: #1f2937;
+  --text-secondary: #8f96a3;
+
+  --danger-color: #d84b5b;
+  --warning-color: #d98b2c;
+
+  --card-background: #ffffff;
+  --page-background: #f4f4f8;
+  --section-background: #f6f7fb;
+  --warning-background: #fbf5ee;
+
+  --border-color: #ececf1;
+
+  --radius-xl: 28px;
+  --radius-lg: 20px;
+  --radius-md: 14px;
+
+  --shadow-sm: 0 10px 30px rgba(15, 23, 42, 0.04);
+}
 *,
 html {
   font-family: 'VazirMatnFa' !important;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
 }
 
 .fontface-vazirmatn {
@@ -13,4 +55,236 @@ html {
 
 .fontface-vazir-fa {
   font-family: 'VazirMatnFa' !important;
+}
+.container {
+  width: 100%;
+}
+body {
+  direction: rtl;
+  font-family: Tahoma, sans-serif;
+  background: var(--page-background);
+  color: var(--text-primary);
+}
+
+.page-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  background: var(--primary-color);
+  z-index: -1;
+}
+
+.trust-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 42px 16px 60px;
+}
+
+.page-header {
+  margin-bottom: 34px;
+}
+
+.page-header__logo {
+  width: 190px;
+}
+
+.trust-card {
+  width: 100%;
+  max-width: 840px;
+  background: var(--card-background);
+  border-radius: var(--radius-xl);
+  padding: 28px;
+  box-shadow: var(--shadow-sm);
+}
+
+@media (max-width: 768px) {
+  .trust-card {
+    padding: 18px;
+  }
+
+  .page-header__logo {
+    width: 150px;
+  }
+}
+
+.trust-card__status {
+  background: var(--primary-light);
+  color: var(--primary-color);
+  border-radius: var(--radius-md);
+  padding: 18px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 26px;
+}
+
+.merchant-information {
+  display: flex;
+  gap: 28px;
+  margin-bottom: 28px;
+}
+
+.merchant-information__image-wrapper {
+  width: 190px;
+  height: 190px;
+  border-radius: var(--radius-lg);
+  background: var(--section-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.merchant-information__image {
+  width: 70px;
+  opacity: 0.6;
+}
+
+.merchant-information__details {
+  flex: 1;
+}
+
+.merchant-information__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 18px 0;
+  border-bottom: 1px dashed var(--border-color);
+}
+
+.merchant-information__row:first-child {
+  padding-top: 0;
+}
+
+.merchant-information__row--borderless {
+  border-bottom: none;
+}
+
+.merchant-information__label {
+  color: var(--text-secondary);
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.merchant-information__value {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.report-box {
+  background: var(--section-background);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  margin-bottom: 18px;
+}
+
+.report-box__header {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 14px;
+}
+
+.report-box__title {
+  color: var(--danger-color);
+  font-size: 30px;
+}
+
+.report-box__description {
+  color: #666d78;
+  line-height: 2;
+  margin-bottom: 16px;
+  font-size: 22px;
+}
+
+.report-box__contact-wrapper {
+  display: flex;
+  gap: 30px;
+}
+
+.report-box__contact-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.report-box__icon {
+  width: 20px;
+}
+
+.security-warning {
+  background: var(--warning-background);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+}
+
+.security-warning__title {
+  color: var(--warning-color);
+  font-size: 28px;
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+.security-warning__list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.security-warning__list li {
+  color: #6b7280;
+  line-height: 2;
+  position: relative;
+  padding-right: 18px;
+  font-size: 22px;
+}
+
+.security-warning__list li::before {
+  content: '•';
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+@media (max-width: 768px) {
+  .trust-card__status {
+    font-size: 18px;
+  }
+
+  .merchant-information {
+    flex-direction: column;
+  }
+
+  .merchant-information__image-wrapper {
+    width: 100%;
+  }
+
+  .merchant-information__row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .merchant-information__label,
+  .merchant-information__value,
+  .report-box__description,
+  .report-box__contact-item,
+  .security-warning__list li {
+    font-size: 16px;
+  }
+
+  .report-box__title,
+  .security-warning__title {
+    font-size: 20px;
+  }
+
+  .report-box__contact-wrapper {
+    flex-direction: column;
+    gap: 16px;
+  }
 }
