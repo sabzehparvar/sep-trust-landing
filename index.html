@@ -61,7 +61,7 @@
         <img
           src="./assets/images/sep-logo.png"
           alt="SEP"
-          class="page-header__logo"
+          class="page-header-logo"
         />
       </header>
       <section class="main-card">
@@ -80,7 +80,7 @@
               </div>
             </div>
 
-            <div class="merchant-card__content merchant-card__content--hidden">
+            <div class="merchant-card-content merchant-card-content-hidden">
               <div class="merchant-status">
                 این پذیرنده معتبر و مورد تایید است.
               </div>
@@ -88,34 +88,40 @@
                 <div class="merchant-information-details">
                   <div class="merchant-information-row">
                     <span class="merchant-information-label">نام پذیرنده</span>
-                    <span class="merchant-information-value"
-                      >رضا ساری اصلانی</span
-                    >
+                    <span
+                      class="merchant-information-value"
+                      id="merchantName"
+                    ></span>
                   </div>
 
                   <div class="merchant-information-row">
                     <span class="merchant-information-label">صاحب امتیاز</span>
-                    <span class="merchant-information-value"
-                      >آکادمی اصلانی</span
-                    >
+                    <span
+                      class="merchant-information-value"
+                      id="merchantTitle"
+                    ></span>
                   </div>
 
                   <div class="merchant-information-row">
                     <span class="merchant-information-label"
                       >تاریخ آغاز فعالیت</span
                     >
-                    <span class="merchant-information-value">
-                      ۱۴۰۵/۰۱/۲۴ - ۲ سال و ۱ ماه پیش
-                    </span>
+                    <span
+                      class="merchant-information-value"
+                      id="startDate"
+                    ></span>
                   </div>
 
                   <div
-                    class="merchant-information-row merchant-information-row--borderless"
+                    class="merchant-information-row merchant-information-row-borderless"
                   >
                     <span class="merchant-information-label"
                       >شماره ترمینال</span
                     >
-                    <span class="merchant-information-value">۵۶۲۱۴۵۴۵۰۱۲۴</span>
+                    <span
+                      class="merchant-information-value"
+                      id="terminalNumber"
+                    ></span>
                   </div>
                 </div>
                 <div class="merchant-information-image-wrapper">
@@ -129,38 +135,38 @@
             </div>
           </section>
           <section class="report-box">
-            <div class="report-box__header">
-              <h2 class="report-box__title">ثبت گزارش تخلف</h2>
+            <div class="report-box-header">
+              <h2 class="report-box-title">ثبت گزارش تخلف</h2>
             </div>
-            <p class="report-box__description">
+            <p class="report-box-description">
               در صورت مشاهده هر گونه تخلف توسط پذیرنده، لطفا از طریق راه های زیر
               با ما در ارتباط باشید.
             </p>
-            <div class="report-box__contact-wrapper">
-              <div class="report-box__contact-item">
+            <div class="report-box-contact-wrapper">
+              <div class="report-box-contact-item">
                 <img
                   src="./assets/images/icons/mail.svg"
                   alt="mail"
-                  class="report-box__icon"
+                  class="report-box-icon"
                 />
                 <span>epay@sep.ir</span>
               </div>
-              <div class="report-box__contact-item">
+              <div class="report-box-contact-item">
                 <img
                   src="./assets/images/icons/phone.svg"
                   alt="phone"
-                  class="report-box__icon"
+                  class="report-box-icon"
                 />
                 <span>۰۲۱-۸۲۴۳۵۰۰۰</span>
               </div>
             </div>
           </section>
           <section class="security-warning">
-            <h3 class="security-warning__title">
+            <h3 class="security-warning-title">
               جهت اطمینان و امنیت بیشتر در هنگام مشاهده صفحه به نکات زیر توجه
               فرمایید:
             </h3>
-            <ul class="security-warning__list">
+            <ul class="security-warning-list">
               <li>
                 آدرس سایت پذیرنده با آدرسی که در این صفحه معرفی شده یکسان باشد.
               </li>
@@ -176,7 +182,7 @@
             </ul>
           </section>
         </section>
-        <section class="empty-state">
+        <section class="empty-state display-none">
           <img
             src="./assets/images/empty-state.png"
             alt="empty state image"
@@ -187,7 +193,7 @@
             اطلاعات پذیرنده مورد نظر یافت در سامانه یافت نشد. لطفا اطلاعات وارد
             شده را بررسی کرده و دوباره تلاش کنید.
           </p>
-          <button class="empty-state-button">بازگشت</button>
+          <button type="button" class="empty-state-button">بازگشت</button>
         </section>
       </section>
     </main>
