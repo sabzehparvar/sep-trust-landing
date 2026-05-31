@@ -50,8 +50,7 @@
       href="./assets/images/fav/android-chrome-512x512.png"
     />
 
-    <link href="./assets/fonts/vazir/css/font-face.css" rel="stylesheet" />
-
+    <link rel="stylesheet" href="./assets/fonts/vazir/css/font-face.css" />
     <link rel="stylesheet" href="./assets/styles/main.css" />
   </head>
 
@@ -66,41 +65,62 @@
         />
       </header>
       <section class="trust-card">
-        <div class="trust-card__status">
-          این پذیرنده معتبر و مورد تایید است.
-        </div>
-        <section class="merchant-information">
-          <div class="merchant-information__details">
-            <div class="merchant-information__row">
-              <span class="merchant-information__label">نام پذیرنده</span>
-              <span class="merchant-information__value">رضا ساری اصلانی</span>
-            </div>
-
-            <div class="merchant-information__row">
-              <span class="merchant-information__label">صاحب امتیاز</span>
-              <span class="merchant-information__value">آکادمی اصلانی</span>
-            </div>
-
-            <div class="merchant-information__row">
-              <span class="merchant-information__label">تاریخ آغاز فعالیت</span>
-              <span class="merchant-information__value">
-                ۱۴۰۵/۰۱/۲۴ - ۲ سال و ۱ ماه پیش
-              </span>
-            </div>
-
-            <div
-              class="merchant-information__row merchant-information__row--borderless"
-            >
-              <span class="merchant-information__label">شماره ترمینال</span>
-              <span class="merchant-information__value">۵۶۲۱۴۵۴۵۰۱۲۴</span>
+        <section class="merchant-card">
+          <div class="merchant-skeleton">
+            <div class="skeleton-status shimmer"></div>
+            <div class="skeleton-info">
+              <div class="skeleton-lines">
+                <div class="skeleton-line shimmer"></div>
+                <div class="skeleton-line shimmer"></div>
+                <div class="skeleton-line shimmer"></div>
+                <div class="skeleton-line shimmer"></div>
+              </div>
+              <div class="skeleton-image shimmer"></div>
             </div>
           </div>
-          <div class="merchant-information__image-wrapper">
-            <img
-              src="./assets/images/image-placeholder.png"
-              alt="merchant"
-              class="merchant-information__image"
-            />
+
+          <div class="merchant-card__content merchant-card__content--hidden">
+            <div class="merchant-status">
+              این پذیرنده معتبر و مورد تایید است.
+            </div>
+            <div class="merchant-information">
+              <div class="merchant-information-details">
+                <div class="merchant-information-row">
+                  <span class="merchant-information-label">نام پذیرنده</span>
+                  <span class="merchant-information-value"
+                    >رضا ساری اصلانی</span
+                  >
+                </div>
+
+                <div class="merchant-information-row">
+                  <span class="merchant-information-label">صاحب امتیاز</span>
+                  <span class="merchant-information-value">آکادمی اصلانی</span>
+                </div>
+
+                <div class="merchant-information-row">
+                  <span class="merchant-information-label"
+                    >تاریخ آغاز فعالیت</span
+                  >
+                  <span class="merchant-information-value">
+                    ۱۴۰۵/۰۱/۲۴ - ۲ سال و ۱ ماه پیش
+                  </span>
+                </div>
+
+                <div
+                  class="merchant-information-row merchant-information-row--borderless"
+                >
+                  <span class="merchant-information-label">شماره ترمینال</span>
+                  <span class="merchant-information-value">۵۶۲۱۴۵۴۵۰۱۲۴</span>
+                </div>
+              </div>
+              <div class="merchant-information-image-wrapper">
+                <img
+                  src="./assets/images/image-placeholder.png"
+                  alt="merchant"
+                  class="merchant-information-image"
+                />
+              </div>
+            </div>
           </div>
         </section>
         <section class="report-box">
@@ -151,7 +171,7 @@
         </section>
       </section>
     </main>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./js/vendor/jquery/jquery.min.js"></script>
     <script src="./js/app.js"></script>
   </body>
 </html>
