@@ -93,7 +93,7 @@ body {
   width: 190px;
 }
 
-.trust-card {
+.main-card {
   width: 100%;
   max-width: 840px;
   background: var(--card-background);
@@ -102,7 +102,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  .trust-card {
+  .main-card {
     padding: 18px;
   }
 
@@ -269,7 +269,7 @@ body {
   top: 0;
   right: 0;
   width: 100%;
-  padding: 0; 
+  padding: 0;
   background: var(--card-background);
   z-index: 10;
 }
@@ -337,6 +337,38 @@ body {
   100% {
     transform: translateX(100%);
   }
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  max-width: 324px;
+  margin: 100px auto;
+}
+.empty-state-image {
+  max-width: 180px;
+}
+.empty-state-title {
+  color: var(--text-primary);
+  font-weight: 700;
+  font-size: 24px;
+}
+.empty-state-description {
+  color: #919aaf;
+  text-align: justify;
+  font-size: 14px;
+  font-weight: 500;
+}
+.empty-state-button {
+  width: 100%;
+  padding: 13px;
+  background-color: var(--primary-color);
+  border-radius: 12px;
+  border: none;
+  color: #ffffff;
 }
 
 @media (max-width: 768px) {
