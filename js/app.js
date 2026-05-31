@@ -28,7 +28,7 @@ function initializeHomePage() {
 }
 
 function hideEmptyState() {
-    $('.empty-state').hide();
+    $('.empty-state').addClass('display-none');
 }
 
 function getParamsFromPath() {
@@ -92,32 +92,25 @@ function fetchMerchantData() {
 }
 
 function populateMerchantCard(data) {
-    $('.merchant-information-row:contains("نام پذیرنده") .merchant-information-value')
-        .text(data.persianTitle || '---');
-
-    $('.merchant-information-row:contains("صاحب امتیاز") .merchant-information-value')
-        .text(data.merchantName || '---');
-
+    $('#merchantName').text(data.persianTitle || '---');
+    $('#merchantTitle').text(data.merchantName || '---');
     const datePart = data.createdOn ? data.createdOn.split(' ')[0] : '---';
     const relativeTime = data.createdOn ? getRelativeTime(datePart) : '';
     const displayDate = relativeTime ? `${datePart} - ${relativeTime}` : datePart;
-    $('.merchant-information-row:contains("تاریخ آغاز فعالیت") .merchant-information-value')
-        .text(displayDate);
-
-    $('.merchant-information-row:contains("شماره ترمینال") .merchant-information-value')
-        .text(data.terminalNumber || '---');
+    $('#startDate').text(displayDate);
+    $('#terminalNumber').text(data.terminalNumber || '---');
 }
 
 function hideSkeletonShowContent() {
     $('.merchant-skeleton').fadeOut(300, function () {
-        $('.merchant-card__content').removeClass('merchant-card__content--hidden');
+        $('.merchant-card-content').removeClass('merchant-card-content-hidden');
     });
 }
 
 function showEmptyState() {
     $('.merchant-skeleton').hide();
     $('.details-card').hide();
-    $('.empty-state').show();
+    $('.empty-state').removeClass('display-none');
 }
 
 $('.empty-state-button').on('click', function () {
