@@ -1,19 +1,21 @@
 ::-ms-clear {
   display: none;
 }
+
 :root {
   --primary-color: #2e74e5;
   --primary-light: #387ff50d;
 
   --text-primary: #25282e;
   --text-secondary: #8f96a3;
+  --text-description: #5b616f;
 
   --danger-color: #c62e43;
   --warning-color: #cc6600;
 
   --card-background: #ffffff;
-  --page-background: #f4f4f8;
-  --section-background: #f6f7fb;
+  --page-background: #f7f7fc;
+  --section-background: #f4f5f7;
   --warning-background: #fbf5ee;
 
   --border-color: #d3d7df;
@@ -21,17 +23,13 @@
   --radius-xl: 24px;
   --radius-lg: 20px;
   --radius-md: 14px;
+}
 
-  --shadow-sm: 0 10px 30px rgba(15, 23, 42, 0.04);
-}
-*,
-html {
-  font-family: "VazirMatnFa" !important;
-}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'VazirMatnFa', sans-serif;
 }
 
 ul {
@@ -45,25 +43,28 @@ img {
 
 button,
 input,
-textarea {
+textarea,
+select {
   font-family: inherit;
 }
 
 .fontface-vazirmatn {
-  font-family: "VazirMatn" !important;
+  font-family: 'VazirMatn', sans-serif;
 }
 
 .fontface-vazir-fa {
-  font-family: "VazirMatnFa" !important;
+  font-family: 'VazirMatnFa', sans-serif;
 }
+
 .container {
   width: 100%;
 }
+
 body {
   direction: rtl;
-  font-family: Tahoma, sans-serif;
   background: var(--page-background);
   color: var(--text-primary);
+  font-family: 'VazirMatnFa', sans-serif;
 }
 
 .page-background {
@@ -98,7 +99,6 @@ body {
   background: var(--card-background);
   border-radius: var(--radius-xl);
   padding: 28px;
-  box-shadow: var(--shadow-sm);
 }
 
 @media (max-width: 768px) {
@@ -140,8 +140,9 @@ body {
 }
 
 .merchant-information__image {
-  width: 70px;
-  opacity: 0.6;
+  max-width: 70px;
+  max-height: 100%;
+  object-fit: contain;
 }
 
 .merchant-information__details {
@@ -181,7 +182,6 @@ body {
 
 .report-box__header {
   display: flex;
-  justify-content: flex-start;
   margin-bottom: 14px;
 }
 
@@ -191,7 +191,7 @@ body {
 }
 
 .report-box__description {
-  color: #5b616f;
+  color: var(--text-description);
   margin-bottom: 16px;
   font-size: 16px;
 }
@@ -227,29 +227,28 @@ body {
 }
 
 .security-warning__list {
+  list-style: disc;
+  padding-inline-start: 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 14px;
 }
 
 .security-warning__list li {
-  color: #5B616F;
-  position: relative;
-  padding-right: 18px;
+  color: var(--text-description);
   font-size: 16px;
 }
 
-.security-warning__list li a{
+.security-warning__list li a {
   color: var(--primary-color);
   text-decoration: none;
   border-bottom: 1px solid;
 }
 
-.security-warning__list li::before {
-  content: "•";
-  position: absolute;
-  right: 0;
-  top: 0;
+.security-warning__list li a:hover,
+.security-warning__list li a:focus-visible {
+  border-bottom-width: 2px;
+  outline: none;
 }
 
 @media (max-width: 768px) {
@@ -263,6 +262,10 @@ body {
 
   .merchant-information__image-wrapper {
     width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    max-width: 190px;
+    margin: 0 auto;
   }
 
   .merchant-information__row {
@@ -277,14 +280,11 @@ body {
   .security-warning__list li {
     font-size: 16px;
   }
-
-  .report-box__title,
-  .security-warning__title {
-    font-size: 20px;
-  }
-
+}
+@media (max-width: 425px) {
   .report-box__contact-wrapper {
+    display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 10px;
   }
 }
